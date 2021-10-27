@@ -1,0 +1,32 @@
+.post-card {
+  padding: 20rpx;
+  margin: 20rpx;
+  height: 500rpx;
+  border: 1px solid #e8e8e8;
+  border-radius: 20rpx;
+}
+
+.post-card .post-card-image {
+  height: 60%;
+  background-size: cover;
+}
+
+.post-card .post-card-content {
+  height: 20%;
+}
+
+.post-card .post-card-content .title {
+  font-size: 28rpx;
+}
+
+.post-card .post-card-content .text {
+  margin: 15rpx 0;
+  font-size: 25rpx;
+}
+
+.post-card .post-card-content .info {
+  height: 10%;
+  display: flex;
+  font-size: 20rpx;
+  justify-content: space-between;
+}

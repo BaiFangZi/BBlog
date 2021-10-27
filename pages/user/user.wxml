@@ -1,0 +1,22 @@
+<view class="user">
+
+  <view class="user-info__container" bindtap="handleShowPopup">
+    <image class="avatar" src="https://img.yzcdn.cn/vant/cat.jpeg"></image>
+    <text class="nickname">白房子</text>
+  </view>
+  <view class="user-menu__container">
+    <van-cell is-link title="反馈" link-type="navigateTo" url="/pages/feedback/feedback" />
+    <van-cell is-link title="联系作者" link-type="navigateTo" url="/pages/connect/connect" />
+    <van-cell is-link title="关于" link-type="navigateTo" url="/pages/feedback/feedback" />
+  </view>
+  <van-popup show="{{ isShowPopup }}" position="bottom" custom-style="height: 20%" bind:close="handleClosePopup">
+    <van-button type="danger" bind:click="handleLogOut" block>注销登陆</van-button>
+  </van-popup>
+
+  <van-overlay show="{{ isShowOverlay }}">
+    <view class="user-loading__container">
+      <view class="user-loading__block" catch:tap="noop" />
+    </view>
+  </van-overlay>
+
+</view>

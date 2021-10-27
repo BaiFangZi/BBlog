@@ -1,0 +1,34 @@
+<view>
+  <view class="topic_scroll-container--header">
+    <scroll-view class="topic_scroll" scroll-x enable-flex>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+      <view class="topic_scroll-item"> <text>前端</text></view>
+    </scroll-view>
+  </view>
+  <view class="topic-card--container">
+    <view class="topic-card">
+      <view class="topic-card__details">
+        <view style="flex:1">
+          <view class="topic-card__title">文章的标题</view>
+          <view class="topic-card__text">文章的摘要文章的摘要文章的摘要文章的摘要</view>
+        </view>
+        <image class="topic-card__img"></image>
+      </view>
+      <view class="topic-card__info">
+        <text class="author">作者1</text>
+        <text class="view">1123</text>
+        <text class="date">2020/12/23 23:12</text>
+      </view>
+    </view>
+  </view>
+
+</view>

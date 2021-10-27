@@ -1,0 +1,47 @@
+.topic_scroll-container--header {
+  // padding: 20rxp;
+  margin: 20rpx;
+  .topic_scroll {
+    display: flex;
+    height: 100rpx;
+    .topic_scroll-item {
+      display: inline-block;
+      text {
+        display: block;
+        width: 100rpx;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.topic-card--container {
+  border: 1px solid #e8e8e8;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  .topic-card {
+    height: 200rpx;
+    padding: 20rpx;
+    .topic-card__details {
+      display: flex;
+      height: 170rpx;
+      .topic-card__title {
+        font-size: 25rpx;
+        margin-bottom: 40rpx;
+      }
+      .topic-card__text {
+        font-size: 20rpx;
+      }
+      .topic-card__img {
+        width: 200rpx;
+        // margin: 20rpx;
+        height: 100%;
+      }
+    }
+    .topic-card__info {
+      font-size: 20rpx;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

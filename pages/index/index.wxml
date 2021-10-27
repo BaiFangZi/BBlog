@@ -1,0 +1,32 @@
+<view>
+
+  <view class="post">
+    <navigator url="/pages/details/details?id=1">
+      <view class="post-card">
+        <image class="post-card-image" src="https://img.yzcdn.cn/vant/cat.jpeg"></image>
+        <view class="post-card-content">
+          <view class="title">
+            这是文章的标题
+          </view>
+          <view class="text">
+            文章的内容文章的内容文章的内容文章的内容文章的内容
+            文章的内容文章的内容文章的内容文章的内容文章的内容
+            文章的内容文章的内容文章的内容文章的内容文章的内容
+          </view>
+          <view class="info">
+            <text class="author">作者名称</text>
+            <text class="view-num">11234</text>
+            <text class="date">2020/12/23 20:34</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+
+  </view>
+
+
+
+
+
+</view>
