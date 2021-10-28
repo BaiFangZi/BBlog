@@ -1,11 +1,12 @@
-export const request = (url, method = "GET", data = {}) => {
+const baseUrl = "http://localhost:3002";
+export const request = ({ url, method = "GET", data = {} }) => {
   return new Promise((resolve, reject) => {
     wx.request({
-      url,
+      url: baseUrl + url,
       method,
       data,
       success(res) {
-        resolve(res);
+        resolve(res.data);
       },
       fail(err) {
         console.log(err);

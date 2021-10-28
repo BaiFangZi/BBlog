@@ -26,16 +26,19 @@ Page({
     setTimeout(() => {
       this.setData({
         isShowPopup: false,
-        isShowOverlay:false
+        isShowOverlay: false,
       });
-      
     }, 1000);
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {},
+  onLoad: function (options) {
+    wx.login({}).then((res) => {
+      console.log(res);
+    });
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

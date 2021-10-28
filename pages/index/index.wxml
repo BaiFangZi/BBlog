@@ -1,17 +1,14 @@
-<view>
-
-  <view class="post">
-    <navigator url="/pages/details/details?id=1">
-      <view class="post-card">
+<view class="post">
+  <scroll-view class="post-scroll" refresher-triggered="{{isPullDown}}" enable-flex scroll-y refresher-enabled lower-threshold="100" bindrefresherrefresh="onPullDownRefresh" bindscrolltolower="onReachBottom">
+    <navigator style="height: 540rpx;" wx:for="{{post}}" wx:key="id" url="/pages/details/details?id={{item.id}}">
+      <view class=" post-card">
         <image class="post-card-image" src="https://img.yzcdn.cn/vant/cat.jpeg"></image>
         <view class="post-card-content">
           <view class="title">
-            这是文章的标题
+            {{item.title}}
           </view>
           <view class="text">
-            文章的内容文章的内容文章的内容文章的内容文章的内容
-            文章的内容文章的内容文章的内容文章的内容文章的内容
-            文章的内容文章的内容文章的内容文章的内容文章的内容
+            {{item.content}}
           </view>
           <view class="info">
             <text class="author">作者名称</text>
@@ -21,12 +18,11 @@
         </view>
       </view>
     </navigator>
-
+    <view class="reach-bottom-nomore" wx:if="{{isNoMore}}">没有更多了</view>
+  </scroll-view>
+  <view class="reach-bottom-loading">
+    <van-loading wx:if="{{isReachBottom}}" size="24px" vertical>加载中...</van-loading>
 
   </view>
-
-
-
-
 
 </view>

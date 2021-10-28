@@ -46,7 +46,7 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "appid": "touristappid",
+  "appid": "wx8a14fda05a011fc2",
   "projectname": "BBlog",
   "debugOptions": {
     "hidedInDevtools": []

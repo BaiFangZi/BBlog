@@ -1,5 +1,3 @@
 <view>
-
   <text>文章id是{{detailsId}}</text>
-
 </view>

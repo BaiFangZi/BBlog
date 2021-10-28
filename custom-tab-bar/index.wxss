@@ -1,1 +1,4 @@
 /* component/custom-tab-bar.wxss */
+.custom-tab-bar {
+  height: 100rpx;
+}
