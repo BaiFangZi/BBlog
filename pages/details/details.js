@@ -1,10 +1,11 @@
 // pages/details/details.js
+import { queryPostDetails } from "../../api/index";
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    detailsId: "",
+    postDetail: {},
   },
 
   /**
@@ -12,8 +13,12 @@ Page({
    */
   onLoad: function (options) {
     const id = options.id;
-    this.setData({
-      detailsId: id,
+    queryPostDetails({
+      postId: id,
+    }).then((res) => {
+      this.setData({
+        postDetail: res,
+      });
     });
   },
 

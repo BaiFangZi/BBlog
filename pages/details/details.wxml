@@ -1,3 +1,13 @@
-<view>
-  <text>文章id是{{detailsId}}</text>
+<view class="post-detail">
+  <view class="post-detail--title">
+    <text>{{postDetail.title}}</text>
+  </view>
+  <view class="post-detail--content">
+    <text>{{postDetail.content}}</text>
+  </view>
+  <view class="post-detail--info">
+    <text class="author">{{postDetail.author}}</text>
+    <text class="date">{{postDetail.date}}</text>
+    <text class="view">{{postDetail.view}}</text>
+  </view>
 </view>

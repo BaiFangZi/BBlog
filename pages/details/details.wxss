@@ -1,1 +1,22 @@
-/* pages/details/details.wxss */
+.post-detail {
+  padding: 20rpx;
+}
+
+.post-detail .post-detail--title {
+  text-align: center;
+}
+
+.post-detail .post-detail--content {
+  margin: 20rpx 0;
+}
+
+.post-detail .post-detail--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-detail .post-detail--info .author, .post-detail .post-detail--info .view, .post-detail .post-detail--info .date {
+  font-size: 20rpx;
+  opacity: .8;
+}

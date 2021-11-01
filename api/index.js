@@ -6,3 +6,9 @@ export const queryPostList = (data) =>
     method: "GET",
     data,
   });
+export const queryPostDetails = (data) =>
+  request({
+    url: "/postdetails",
+    method: "GEt",
+    data,
+  });
