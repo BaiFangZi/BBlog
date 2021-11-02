@@ -20,8 +20,16 @@ export const queryTopic = (data) =>
     data,
   });
 
-  export const queryTopicContent=(data)=>request({
-    url:'/querytopiccontent',
-    method:'GET',
-    data
-  })
+export const queryTopicContent = (data) =>
+  request({
+    url: "/querytopiccontent",
+    method: "GET",
+    data,
+  });
+
+export const loginIn = (data) =>
+  request({
+    url: "/login",
+    method: "POST",
+    data,
+  });

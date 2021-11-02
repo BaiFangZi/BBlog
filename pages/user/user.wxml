@@ -1,8 +1,17 @@
 <view class="user">
 
-  <view class="user-info__container" bindtap="handleShowPopup">
-    <image class="avatar" src="https://img.yzcdn.cn/vant/cat.jpeg"></image>
-    <text class="nickname">白房子</text>
+  <view>
+    <view class="user-info__container" wx:if="{{isLogin}}" bindtap="handleShowPopup">
+      <image class="avatar" src="https://img.yzcdn.cn/vant/cat.jpeg"></image>
+      <text class="nickname">白房子</text>
+    </view>
+    <view class="user-info__container" wx:else bindtap="handleLogin">
+      <!-- <image class="avatar" src="https://img.yzcdn.cn/vant/cat.jpeg"></image> -->
+      <view class="avatar" style="text-align: center; line-height:200rpx">
+        未登陆
+      </view>
+    </view>
+
   </view>
   <view class="user-menu__container">
     <van-cell is-link title="创作管理" link-type="navigateTo" url="/pages/control/control" />

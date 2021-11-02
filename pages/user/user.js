@@ -1,4 +1,5 @@
 // pages/user/user.js
+import { loginIn } from "../../api/index";
 Page({
   /**
    * 页面的初始数据
@@ -6,11 +7,24 @@ Page({
   data: {
     isShowPopup: false,
     isShowOverlay: false,
+    isLogin: false,
   },
   handleShowPopup() {
     // console.log()
     this.setData({
       isShowPopup: true,
+    });
+  },
+  handleLogin() {
+    wx.login().then((res) => {
+      // console.log(res);
+      const { code } = res;
+      loginIn({ code }).then((res) => {
+        wx.setStorageSync("user", res);
+        this.setData({
+          isLogin: true,
+        });
+      });
     });
   },
   handleClosePopup() {
@@ -24,7 +38,10 @@ Page({
       isShowOverlay: true,
     });
     setTimeout(() => {
+      wx.removeStorageSync("user");
+
       this.setData({
+        isLogin: false,
         isShowPopup: false,
         isShowOverlay: false,
       });
