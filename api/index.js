@@ -9,6 +9,19 @@ export const queryPostList = (data) =>
 export const queryPostDetails = (data) =>
   request({
     url: "/postdetails",
-    method: "GEt",
+    method: "GET",
     data,
   });
+
+export const queryTopic = (data) =>
+  request({
+    url: "/topicnav",
+    method: "GET",
+    data,
+  });
+
+  export const queryTopicContent=(data)=>request({
+    url:'/querytopiccontent',
+    method:'GET',
+    data
+  })

@@ -4,11 +4,15 @@
   .topic_scroll {
     display: flex;
     height: 100rpx;
+    .active{
+      // color: red;
+      border-bottom: 5rpx solid blue;
+    }
     .topic_scroll-item {
       display: inline-block;
       text {
         display: block;
-        width: 100rpx;
+        width: 150rpx;
         text-align: center;
       }
     }
@@ -16,12 +20,14 @@
 }
 
 .topic-card--container {
-  border: 1px solid #e8e8e8;
-  border-radius: 20rpx;
   margin: 20rpx;
+  margin-bottom: 70px;
   .topic-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 20rpx;
     height: 200rpx;
     padding: 20rpx;
+    margin: 10rpx 0;
     .topic-card__details {
       display: flex;
       height: 170rpx;

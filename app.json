@@ -6,7 +6,8 @@
     "pages/details/details",
     "pages/about/about",
     "pages/feedback/feedback",
-    "pages/connect/connect"
+    "pages/connect/connect",
+    "pages/control/control"
   ],
   "window": {
     "backgroundTextStyle": "light",

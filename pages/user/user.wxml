@@ -5,6 +5,7 @@
     <text class="nickname">白房子</text>
   </view>
   <view class="user-menu__container">
+    <van-cell is-link title="创作管理" link-type="navigateTo" url="/pages/control/control" />
     <van-cell is-link title="反馈" link-type="navigateTo" url="/pages/feedback/feedback" />
     <van-cell is-link title="联系作者" link-type="navigateTo" url="/pages/connect/connect" />
     <van-cell is-link title="关于" link-type="navigateTo" url="/pages/feedback/feedback" />
